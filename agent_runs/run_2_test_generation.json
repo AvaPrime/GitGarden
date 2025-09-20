@@ -1,6 +1,8 @@
 {
+  "run_id": "run-002-test-generation",
+  "agent_type": "test-generator",
   "agent_id": "test_generator_002",
-  "model": "gpt-4",
+  "model": "claude-4-sonnet",
   "timestamp": "2024-01-15T14:36:45.123Z",
   "execution_time_ms": 3120,
   "input": {

@@ -61,5 +61,13 @@
       "model": "claude-3.5-sonnet",
       "role": "Technical documentation and API reference generation"
     }
+  },
+  "self_scores": {
+    "originality": 8,
+    "technical": 7,
+    "agent_collaboration": 9,
+    "ux_discoverability": 6,
+    "ethics": 8,
+    "scalability": 7
   }
 }

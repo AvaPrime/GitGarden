@@ -1,6 +1,8 @@
 {
   "agent_id": "code_reviewer_001",
-  "model": "claude-3.5-sonnet",
+  "run_id": "run-001-code-review",
+  "agent_type": "code-reviewer",
+  "model": "claude-4-sonnet",
   "timestamp": "2024-01-15T14:35:22.847Z",
   "execution_time_ms": 2340,
   "input": {
