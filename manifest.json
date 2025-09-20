@@ -1,8 +1,11 @@
 {
-  "name": "GitGarden Agent Integration Demo",
+  "name": "gitgarden-agent-integration",
   "version": "1.0.0",
-  "description": "Multi-agent collaboration system for conversation-based development workflows",
+  "description": "GitGarden Challenge submission demonstrating agent integration for conversation versioning and collaborative AI workflows",
   "option": "B",
+  "authors": ["AI: Claude-4-Sonnet", "Human: GitGarden Participant"],
+  "license": "MIT",
+  "created_at": "2025-01-20T20:00:00Z",
   "files": {
     "manifest.json": "Repository metadata and run instructions",
     "README.md": "Project overview, elevator pitch, and architecture",
