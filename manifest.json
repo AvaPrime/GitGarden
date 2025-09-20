@@ -1,0 +1,62 @@
+{
+  "name": "GitGarden Agent Integration Demo",
+  "version": "1.0.0",
+  "description": "Multi-agent collaboration system for conversation-based development workflows",
+  "option": "B",
+  "files": {
+    "manifest.json": "Repository metadata and run instructions",
+    "README.md": "Project overview, elevator pitch, and architecture",
+    "conversation_commit.md": "Example conversation thread with branching PR",
+    "agent_runs/": "Directory containing agent execution outputs",
+    "agent_runs/run_1_code_review.json": "Code review agent output with metadata",
+    "agent_runs/run_2_test_generation.json": "Test generation agent output",
+    "agent_runs/run_3_documentation.json": "Documentation agent output",
+    "ethics_checklist.md": "Risk assessment and ethical considerations",
+    "demo_plan.md": "2-minute demonstration script"
+  },
+  "run_steps": [
+    {
+      "step": 1,
+      "command": "Initialize GitGarden workspace",
+      "description": "Set up conversation tracking and agent orchestration"
+    },
+    {
+      "step": 2,
+      "command": "Load agent configurations",
+      "description": "Configure specialized agents (reviewer, tester, documenter)"
+    },
+    {
+      "step": 3,
+      "command": "Process conversation thread",
+      "description": "Parse conversation history and identify collaboration points"
+    },
+    {
+      "step": 4,
+      "command": "Execute agent workflows",
+      "description": "Run parallel agent tasks with dependency management"
+    },
+    {
+      "step": 5,
+      "command": "Merge agent contributions",
+      "description": "Consolidate agent outputs into conversation branches"
+    }
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "libraries": ["asyncio", "json", "datetime", "typing"]
+  },
+  "agents": {
+    "code_reviewer": {
+      "model": "claude-3.5-sonnet",
+      "role": "Code quality assessment and improvement suggestions"
+    },
+    "test_generator": {
+      "model": "gpt-4",
+      "role": "Automated test case generation and validation"
+    },
+    "documentation_writer": {
+      "model": "claude-3.5-sonnet",
+      "role": "Technical documentation and API reference generation"
+    }
+  }
+}

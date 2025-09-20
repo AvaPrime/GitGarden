@@ -1,0 +1,42 @@
+{
+  "agent_id": "documentation_writer_003",
+  "model": "claude-3.5-sonnet",
+  "timestamp": "2024-01-15T14:38:12.456Z",
+  "execution_time_ms": 2890,
+  "input": {
+    "conversation_id": "conv-abc123",
+    "code_context": "Enhanced secure authentication service with bcrypt hashing and rate limiting",
+    "documentation_types": ["api_reference", "security_guide", "integration_examples"],
+    "target_audience": ["developers", "security_engineers", "devops"],
+    "format": "markdown"
+  },
+  "output": {
+    "generated_documentation": {
+      "api_reference": "# SecureAuthService API Reference\n\n## Class: SecureAuthService\n\n### Constructor\n```python\nSecureAuthService(secret_key: str)\n```\nInitializes the authentication service with a JWT secret key.\n\n**Parameters:**\n- `secret_key` (str): Secret key for JWT token signing. Must be cryptographically secure.\n\n### Methods\n\n#### register_user(email: str, password: str) -> dict\nRegisters a new user with email and password validation.\n\n**Parameters:**\n- `email` (str): User email address (must be valid format)\n- `password` (str): User password (minimum 8 characters, mixed case required)\n\n**Returns:**\n- `dict`: Status response with success/error message\n\n**Rate Limiting:** 5 requests per minute per IP\n\n**Example:**\n```python\nauth = SecureAuthService(\"your-secret-key\")\nresult = auth.register_user(\"user@example.com\", \"SecurePass123\")\n```\n\n#### login_user(email: str, password: str) -> dict\nAuthenticates user and returns JWT token.\n\n**Parameters:**\n- `email` (str): User email address\n- `password` (str): User password\n\n**Returns:**\n- `dict`: JWT token or error message\n\n**Rate Limiting:** 5 requests per minute per IP",
+      "security_guide": "# Security Implementation Guide\n\n## Password Security\n\n### Hashing Algorithm\nThe service uses bcrypt with salt for password hashing, providing protection against:\n- Rainbow table attacks\n- Brute force attacks\n- Timing attacks\n\n### Password Requirements\n- Minimum 8 characters\n- At least one uppercase letter\n- At least one lowercase letter\n- Special characters recommended\n\n## Rate Limiting\n\n### Implementation\n- Flask-Limiter with Redis backend\n- 5 requests per minute per IP address\n- Automatic IP blocking for repeated violations\n\n### Bypass Protection\n- Rate limiting cannot be bypassed by changing User-Agent\n- X-Forwarded-For headers are validated\n- Distributed rate limiting across multiple servers\n\n## JWT Security\n\n### Token Configuration\n- 24-hour expiration time\n- HS256 signing algorithm\n- Secure secret key generation required\n\n### Best Practices\n- Store tokens in httpOnly cookies\n- Implement token refresh mechanism\n- Validate tokens on every protected request",
+      "integration_examples": "# Integration Examples\n\n## Flask Application Integration\n\n```python\nfrom flask import Flask, request, jsonify\nfrom secure_auth_service import SecureAuthService\n\napp = Flask(__name__)\nauth_service = SecureAuthService(app.config['SECRET_KEY'])\n\n@app.route('/register', methods=['POST'])\ndef register():\n    data = request.get_json()\n    result = auth_service.register_user(\n        data['email'], \n        data['password']\n    )\n    return jsonify(result)\n\n@app.route('/login', methods=['POST'])\ndef login():\n    data = request.get_json()\n    result = auth_service.login_user(\n        data['email'], \n        data['password']\n    )\n    return jsonify(result)\n```\n\n## Docker Configuration\n\n```dockerfile\nFROM python:3.9-slim\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install -r requirements.txt\nCOPY . .\nEXPOSE 5000\nCMD [\"python\", \"app.py\"]\n```\n\n## Environment Variables\n\n```bash\nSECRET_KEY=your-256-bit-secret-key\nREDIS_URL=redis://localhost:6379\nDATABASE_URL=postgresql://user:pass@localhost/db\n```"
+    },
+    "documentation_metrics": {
+      "total_sections": 8,
+      "code_examples": 5,
+      "security_recommendations": 12,
+      "api_endpoints_documented": 2,
+      "readability_score": 8.7
+    },
+    "quality_checks": {
+      "grammar_check": "passed",
+      "code_syntax_validation": "passed",
+      "link_validation": "passed",
+      "completeness_score": 0.94
+    }
+  },
+  "metadata": {
+    "agent_version": "1.4.2",
+    "conversation_branch": "feature/enhanced-auth-security",
+    "triggered_by": "test_generation_completion",
+    "confidence_score": 0.91,
+    "processing_tokens": 1834,
+    "documentation_standards": ["google_style", "pep257"],
+    "target_formats": ["markdown", "html", "pdf"]
+  }
+}
