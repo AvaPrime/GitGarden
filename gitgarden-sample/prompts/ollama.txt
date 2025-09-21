@@ -1,0 +1,3 @@
+Local LLM mode. Produce a GitGarden submission for option B (Agent Integration) with minimal dependencies.
+Sections: MANIFEST, README, COMMIT, AGENT_RUNS(3 stubs ok), ETHICS, DEMO_PLAN, SELF_SCORE.
+No external URLs. Provide deterministic steps and note that runs are simulated.

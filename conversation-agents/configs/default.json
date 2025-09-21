@@ -1,0 +1,141 @@
+{
+  "system": {
+    "name": "gitgarden-conversation-agents",
+    "version": "0.1.0",
+    "environment": "development",
+    "logging_level": "info",
+    "max_conversation_duration": 7200,
+    "auto_save_interval": 300
+  },
+  "agents": {
+    "moderator": {
+      "name": "conversation-flow-moderator-v1",
+      "enabled": true,
+      "config": {
+        "rules_enforcement": "strict",
+        "flow_control": "adaptive",
+        "intervention_threshold": 0.7,
+        "max_participants": 20,
+        "turn_taking_mode": "structured",
+        "timeout_warnings": true,
+        "profanity_filter": true,
+        "bias_detection": true
+      },
+      "prompts": {
+        "welcome": "Welcome to this structured conversation. I'll help maintain productive discourse.",
+        "intervention": "Let's refocus on the main topic and ensure everyone has a chance to contribute.",
+        "warning": "Please keep discussions respectful and on-topic.",
+        "summary": "Here's a summary of our discussion progress so far..."
+      }
+    },
+    "analyzer": {
+      "name": "semantic-branch-analyzer-v1", 
+      "enabled": true,
+      "config": {
+        "semantic_depth": "deep",
+        "relationship_mapping": true,
+        "pattern_detection": "advanced",
+        "clustering_algorithm": "hierarchical",
+        "similarity_threshold": 0.6,
+        "branch_detection_sensitivity": 0.4,
+        "real_time_analysis": true
+      },
+      "analysis_types": [
+        "semantic_similarity",
+        "topic_clustering", 
+        "sentiment_analysis",
+        "argument_structure",
+        "consensus_tracking",
+        "conflict_detection"
+      ]
+    },
+    "synthesizer": {
+      "name": "consensus-synthesis-agent-v1",
+      "enabled": true,
+      "config": {
+        "consensus_algorithm": "weighted_voting",
+        "conflict_resolution": "mediated",
+        "output_format": "structured",
+        "minimum_agreement": 0.7,
+        "mediation_style": "collaborative",
+        "synthesis_frequency": "on_demand",
+        "auto_merge_threshold": 0.9
+      },
+      "strategies": {
+        "conflict_resolution": [
+          "evidence_compilation",
+          "stakeholder_mapping",
+          "mediated_discussion",
+          "compromise_generation",
+          "consensus_voting"
+        ],
+        "synthesis_methods": [
+          "weighted_aggregation",
+          "hierarchical_merging",
+          "narrative_integration",
+          "structured_summarization"
+        ]
+      }
+    }
+  },
+  "conversation": {
+    "metadata": {
+      "track_participants": true,
+      "record_timestamps": true,
+      "version_control": true,
+      "branch_management": true,
+      "commit_style_logging": true
+    },
+    "rules": {
+      "max_message_length": 2000,
+      "min_message_length": 10,
+      "require_evidence": false,
+      "allow_anonymous": true,
+      "moderation_required": true,
+      "consensus_required_for_closure": true
+    },
+    "formats": {
+      "message_template": "markdown",
+      "commit_format": "structured",
+      "branch_naming": "semantic",
+      "timestamp_format": "ISO8601"
+    }
+  },
+  "output": {
+    "formats": ["json", "markdown", "csv"],
+    "include_metadata": true,
+    "generate_reports": true,
+    "export_conversations": true,
+    "dashboard_integration": true
+  },
+  "security": {
+    "anonymization": {
+      "enabled": true,
+      "preserve_roles": true,
+      "hash_identifiers": true
+    },
+    "content_filtering": {
+      "enabled": true,
+      "pii_detection": true,
+      "harmful_content": true,
+      "spam_prevention": true
+    },
+    "access_control": {
+      "require_authentication": false,
+      "role_based_permissions": true,
+      "audit_logging": true
+    }
+  },
+  "integrations": {
+    "gitgarden": {
+      "enabled": true,
+      "sync_with_main": true,
+      "use_shared_templates": true
+    },
+    "external_apis": {
+      "nlp_services": [],
+      "notification_systems": [],
+      "analytics_platforms": []
+    }
+  }
+}

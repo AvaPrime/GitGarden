@@ -1,0 +1,3 @@
+Task: Create a GitGarden submission demonstrating one option (A/B/C/D/E).
+Output sections in order with labels: MANIFEST, README, COMMIT, AGENT_RUNS, ETHICS, DEMO_PLAN, SELF_SCORE.
+Follow the repo schema described in MANIFEST and include short run steps. Keep total tokens <6000.

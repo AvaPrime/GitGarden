@@ -1,0 +1,40 @@
+{
+  "name": "gitgarden-conversation-agents",
+  "version": "0.1.0",
+  "description": "A multi-agent system designed for version-controlled conversations and collaborative discourse management",
+  "authors": ["GitGarden Community"],
+  "license": "MIT",
+  "created_at": "2025-01-21T01:23:00Z",
+  "files": [
+    "README.md",
+    "conversation_commit.md",
+    "agent_runs.json",
+    "ethics_checklist.md",
+    "demo_plan.md"
+  ],
+  "agents": {
+    "moderator": "conversation-flow-moderator-v1",
+    "analyzer": "semantic-branch-analyzer-v1",
+    "synthesizer": "consensus-synthesis-agent-v1"
+  },
+  "run_steps": [
+    "Initialize conversation thread with proper metadata",
+    "Deploy moderator agent to maintain discussion flow and enforce rules",
+    "Trigger analyzer agent to evaluate branch proposals and semantic relationships",
+    "Execute synthesizer agent to resolve merge conflicts and establish consensus",
+    "Generate comprehensive commit metadata and diff reports for version tracking"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "git": ">=2.30",
+    "json": "builtin"
+  },
+  "self_scores": {
+    "originality": 9,
+    "technical": 8,
+    "agent_collaboration": 10,
+    "ux_discoverability": 7,
+    "ethics": 9,
+    "scalability": 8
+  }
+}

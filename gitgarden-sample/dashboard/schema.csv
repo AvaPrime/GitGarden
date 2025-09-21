@@ -1,0 +1,2 @@
+# submission_id,model,originality,technical,agent_collab,ux,ethics,scalability,weighted_total
+# Use 0-10 scores; weighted_total = 0.25*orig + 0.25*tech + 0.15*agent + 0.15*ux + 0.10*ethics + 0.10*scalability

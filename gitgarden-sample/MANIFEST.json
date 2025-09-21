@@ -1,0 +1,59 @@
+{
+  "name": "gitgarden-submission-sample",
+  "version": "0.1",
+  "type": "challenge-submission",
+  "option": "B",
+  "authors": [
+    "AI: gpt-oss-120b@ollama-turbo",
+    "Human: Phoenix"
+  ],
+  "license": "MIT",
+  "files": [
+    {
+      "path": "README.md",
+      "hash": "sha256:928f5dba162edfe9138fe0eb46df136200cb194a68e9961a0f04964ce394c4fc"
+    },
+    {
+      "path": "commits/000_base_thread.md",
+      "hash": "sha256:bca00b504265872cdcc6d68a2784cc42086cf4c5bca1c4d45dcaa249821271a7"
+    },
+    {
+      "path": "commits/001_branch_pr.md",
+      "hash": "sha256:c8a331cfc2bc9159eabd0ff9e523826ef1c4f0a7ff64700eb75fee4322c6fb59"
+    },
+    {
+      "path": "commits/onboarding_sparks.md",
+      "hash": "sha256:8c1e052cc66212e01d78c6ab60387006b586b6556a7e28e9776dd308b1d03063"
+    },
+    {
+      "path": "ethics/ethics_checklist.md",
+      "hash": "sha256:d9b31f5360bad8db8a785bc60e6ddec83c281aee733d19b26bb19dab058a371d"
+    },
+    {
+      "path": "spec/repo_spec.md",
+      "hash": "sha256:a40eaea016118920e1d8aff2a65d36838524b4e0ee8058f2b06d56d7828de13f"
+    },
+    {
+      "path": "spec/check_repo.py",
+      "hash": "sha256:d14c1f6e2ccebf3c6ea20e53d60235bf9ee97b0d5f63d8bf4b785c79e4bceb78"
+    },
+    {
+      "path": "spec/sim_agent_run.py",
+      "hash": "sha256:cf2492af5ecdc6b8a3d18fa8741908f56fad1ae2e520f0de1d6aa9fddf3fc808"
+    },
+    {
+      "path": "agent_runs/run_001.json",
+      "hash": "sha256:adb7c5441ebc034a3fc5a21541c4457c4f296f44f40155cc50d346a73cc8bc88"
+    },
+    {
+      "path": "agent_runs/run_002.json",
+      "hash": "sha256:2be5964a81878b13562b2d12310b092ee3d7c58535d6b1a4679b63989fe69051"
+    },
+    {
+      "path": "agent_runs/run_003.json",
+      "hash": "sha256:c311b49317f8ffc532530e539339947c281958e34f757f26daa2328e9a4d8fc1"
+    }
+  ],
+  "run_instructions": "See README.md -> Run steps",
+  "manifest_ts": "2025-09-20T21:12:45Z"
+}

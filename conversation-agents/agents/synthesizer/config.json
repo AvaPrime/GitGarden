@@ -1,0 +1,198 @@
+{
+  "agent_info": {
+    "name": "consensus-synthesis-agent-v1",
+    "version": "1.0.0",
+    "type": "synthesizer", 
+    "description": "Resolves merge conflicts and establishes consensus in conversations",
+    "capabilities": [
+      "conflict_resolution",
+      "consensus_building",
+      "perspective_synthesis",
+      "mediation",
+      "outcome_generation",
+      "decision_facilitation"
+    ]
+  },
+  "synthesis_config": {
+    "consensus_algorithm": "weighted_voting",
+    "conflict_resolution": "mediated",
+    "output_format": "structured",
+    "minimum_agreement": 0.7,
+    "mediation_style": "collaborative",
+    "synthesis_frequency": "on_demand",
+    "auto_merge_threshold": 0.9
+  },
+  "conflict_resolution": {
+    "detection": {
+      "semantic_contradiction_threshold": 0.6,
+      "emotional_tension_threshold": 0.5,
+      "participation_imbalance_threshold": 0.7,
+      "topic_fragmentation_threshold": 0.4
+    },
+    "strategies": [
+      {
+        "name": "evidence_compilation",
+        "description": "Gather and organize supporting evidence from all perspectives",
+        "priority": 1,
+        "conditions": ["factual_disagreement", "evidence_available"]
+      },
+      {
+        "name": "stakeholder_mapping", 
+        "description": "Identify and map different stakeholder positions and interests",
+        "priority": 2,
+        "conditions": ["multiple_perspectives", "interest_conflicts"]
+      },
+      {
+        "name": "mediated_discussion",
+        "description": "Facilitate structured dialogue between conflicting parties",
+        "priority": 3,
+        "conditions": ["direct_conflict", "willing_participants"]
+      },
+      {
+        "name": "compromise_generation",
+        "description": "Generate middle-ground solutions that address core concerns",
+        "priority": 4,
+        "conditions": ["partial_agreement", "negotiable_differences"]
+      },
+      {
+        "name": "consensus_voting",
+        "description": "Structured voting on synthesized proposals",
+        "priority": 5,
+        "conditions": ["clear_options", "decision_required"]
+      }
+    ],
+    "mediation_techniques": [
+      "active_listening_facilitation",
+      "perspective_reframing",
+      "common_ground_identification",
+      "interest_based_negotiation",
+      "creative_problem_solving"
+    ]
+  },
+  "consensus_building": {
+    "methods": [
+      {
+        "name": "weighted_aggregation",
+        "description": "Weight perspectives by expertise, evidence quality, and support",
+        "weights": {
+          "expertise_level": 0.3,
+          "evidence_quality": 0.4,
+          "peer_support": 0.2,
+          "logical_consistency": 0.1
+        }
+      },
+      {
+        "name": "hierarchical_merging",
+        "description": "Build consensus from smaller agreements to larger ones",
+        "approach": "bottom_up",
+        "merge_threshold": 0.8
+      },
+      {
+        "name": "narrative_integration", 
+        "description": "Create coherent story that incorporates multiple perspectives",
+        "focus": "shared_values_and_goals"
+      },
+      {
+        "name": "structured_summarization",
+        "description": "Organize agreements, disagreements, and open questions",
+        "format": "decision_matrix"
+      }
+    ],
+    "validation": {
+      "logical_consistency_check": true,
+      "stakeholder_acceptance_test": true,
+      "implementation_feasibility": true,
+      "ethical_implications_review": true
+    }
+  },
+  "synthesis_outputs": {
+    "consensus_document": {
+      "structure": [
+        "executive_summary",
+        "areas_of_agreement", 
+        "remaining_disagreements",
+        "recommended_actions",
+        "implementation_considerations",
+        "follow_up_questions"
+      ],
+      "format": "markdown",
+      "include_metadata": true,
+      "track_confidence_levels": true
+    },
+    "decision_matrix": {
+      "criteria_weighting": true,
+      "option_scoring": true,
+      "sensitivity_analysis": true,
+      "recommendation_ranking": true
+    },
+    "implementation_plan": {
+      "action_items": true,
+      "responsibility_assignment": true,
+      "timeline_estimation": true,
+      "success_metrics": true
+    }
+  },
+  "quality_metrics": {
+    "consensus_strength": {
+      "participant_agreement_percentage": true,
+      "confidence_levels": true,
+      "dissenting_opinion_integration": true,
+      "logical_coherence_score": true
+    },
+    "process_effectiveness": {
+      "time_to_consensus": true,
+      "participant_satisfaction": true,
+      "conflict_resolution_success": true,
+      "outcome_stability": true
+    },
+    "outcome_quality": {
+      "comprehensiveness": true,
+      "actionability": true,
+      "stakeholder_buy_in": true,
+      "implementation_feasibility": true
+    }
+  },
+  "intervention_triggers": {
+    "automatic": [
+      {
+        "condition": "prolonged_disagreement",
+        "threshold": 600,
+        "action": "initiate_mediation"
+      },
+      {
+        "condition": "circular_arguments",
+        "threshold": 3,
+        "action": "suggest_evidence_review"
+      },
+      {
+        "condition": "participant_withdrawal",
+        "threshold": 0.5,
+        "action": "re_engagement_attempt"
+      }
+    ],
+    "manual": [
+      "explicit_request_for_synthesis",
+      "moderator_escalation",
+      "time_constraint_pressure",
+      "decision_deadline_approaching"
+    ]
+  },
+  "communication_style": {
+    "tone": "neutral_facilitating",
+    "approach": "collaborative_problem_solving",
+    "language": "inclusive_and_precise",
+    "feedback_style": "constructive_and_specific"
+  },
+  "templates": {
+    "synthesis_introduction": "I'd like to help synthesize the perspectives we've heard. Let me organize what I'm seeing...",
+    "conflict_acknowledgment": "I notice we have some different viewpoints here. Let's explore these differences constructively...",
+    "consensus_proposal": "Based on our discussion, here's a potential synthesis that might address everyone's core concerns...",
+    "implementation_transition": "Now that we have agreement on the main points, let's think about next steps..."
+  },
+  "performance": {
+    "max_synthesis_time": 300,
+    "concurrent_conflicts": 3,
+    "memory_retention": "session_based",
+    "learning_from_outcomes": true
+  }
+}

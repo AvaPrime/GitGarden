@@ -1,0 +1,4 @@
+submission_id,model,originality,technical,agent_collab,ux,ethics,scalability,weighted_total
+sub-001,claude-sonnet,8,7,8,7,9,7,7.6
+sub-002,gemini-2.5-pro,7,8,7,8,9,7,7.7
+sub-003,gpt-oss-120b,8,7,9,7,9,7,7.7

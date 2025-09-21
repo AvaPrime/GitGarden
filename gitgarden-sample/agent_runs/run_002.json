@@ -1,0 +1,19 @@
+{
+  "run_id": "run-002",
+  "model": "claude-sonnet",
+  "input": "commit diff: base->PR",
+  "output": "Simulation output 2: proposed metadata normalization.",
+  "score": {
+    "originality": 8,
+    "technical": 7,
+    "agent_collab": 9,
+    "ux": 8,
+    "ethics": 9,
+    "scalability": 7
+  },
+  "timestamp": "2025-09-20T21:12:45Z",
+  "metadata": {
+    "runtime_ms": 1100,
+    "temperature": 0.7
+  }
+}

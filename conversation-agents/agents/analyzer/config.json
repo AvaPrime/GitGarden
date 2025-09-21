@@ -1,0 +1,156 @@
+{
+  "agent_info": {
+    "name": "semantic-branch-analyzer-v1",
+    "version": "1.0.0", 
+    "type": "analyzer",
+    "description": "Evaluates branch proposals and semantic relationships in conversations",
+    "capabilities": [
+      "semantic_analysis",
+      "topic_clustering",
+      "relationship_mapping",
+      "branch_detection",
+      "pattern_recognition",
+      "consensus_tracking"
+    ]
+  },
+  "analysis_config": {
+    "semantic_depth": "deep",
+    "real_time_processing": true,
+    "batch_analysis_interval": 60,
+    "relationship_mapping": true,
+    "pattern_detection": "advanced",
+    "historical_context": true
+  },
+  "algorithms": {
+    "clustering": {
+      "method": "hierarchical",
+      "similarity_threshold": 0.6,
+      "min_cluster_size": 2,
+      "max_clusters": 10,
+      "distance_metric": "cosine"
+    },
+    "branch_detection": {
+      "sensitivity": 0.4,
+      "min_divergence": 0.3,
+      "topic_drift_threshold": 0.5,
+      "semantic_distance_method": "embedding_similarity"
+    },
+    "sentiment_analysis": {
+      "enabled": true,
+      "granularity": "message_level",
+      "track_emotional_trajectory": true,
+      "detect_conflict_indicators": true
+    },
+    "consensus_tracking": {
+      "agreement_threshold": 0.7,
+      "disagreement_threshold": 0.3,
+      "track_opinion_evolution": true,
+      "identify_convergence_points": true
+    }
+  },
+  "semantic_features": {
+    "entity_extraction": true,
+    "keyword_identification": true,
+    "topic_modeling": true,
+    "argument_structure_analysis": true,
+    "rhetorical_pattern_detection": true,
+    "evidence_classification": true
+  },
+  "relationship_analysis": {
+    "participant_interaction_mapping": true,
+    "idea_evolution_tracking": true,
+    "influence_network_analysis": true,
+    "support_opposition_detection": true,
+    "citation_relationship_tracking": true
+  },
+  "branch_management": {
+    "auto_branch_creation": {
+      "enabled": true,
+      "divergence_threshold": 0.6,
+      "min_messages_for_branch": 3,
+      "semantic_distance_requirement": 0.4
+    },
+    "branch_naming": {
+      "strategy": "semantic_keywords",
+      "max_name_length": 50,
+      "use_participant_suggestions": true,
+      "fallback_to_auto_generation": true
+    },
+    "merge_detection": {
+      "convergence_threshold": 0.8,
+      "sustained_agreement_duration": 5,
+      "cross_branch_similarity": 0.7
+    }
+  },
+  "pattern_recognition": {
+    "argument_patterns": [
+      "claim_evidence_warrant",
+      "problem_solution_evaluation", 
+      "cause_effect_analysis",
+      "comparison_contrast",
+      "definition_classification"
+    ],
+    "discourse_markers": [
+      "agreement_indicators",
+      "disagreement_signals",
+      "evidence_introduction",
+      "conclusion_markers",
+      "transition_phrases"
+    ],
+    "conversation_phases": [
+      "topic_introduction",
+      "exploration_phase",
+      "debate_phase",
+      "synthesis_phase",
+      "conclusion_phase"
+    ]
+  },
+  "output_formats": {
+    "real_time_insights": {
+      "semantic_clusters": true,
+      "topic_evolution": true,
+      "participant_positions": true,
+      "conflict_indicators": true
+    },
+    "periodic_reports": {
+      "conversation_map": true,
+      "branch_structure": true,
+      "consensus_progress": true,
+      "key_insights": true
+    },
+    "final_analysis": {
+      "complete_semantic_graph": true,
+      "conversation_timeline": true,
+      "participant_contribution_analysis": true,
+      "outcome_prediction": true
+    }
+  },
+  "thresholds": {
+    "topic_similarity": 0.6,
+    "semantic_distance": 0.4,
+    "consensus_confidence": 0.7,
+    "conflict_severity": 0.5,
+    "branch_creation": 0.6,
+    "merge_readiness": 0.8
+  },
+  "performance": {
+    "max_processing_time": 5000,
+    "batch_size": 50,
+    "memory_limit": "1GB",
+    "cache_analysis_results": true,
+    "parallel_processing": true
+  },
+  "integrations": {
+    "nlp_models": {
+      "embedding_model": "sentence-transformers",
+      "sentiment_model": "vader",
+      "topic_model": "lda",
+      "ner_model": "spacy"
+    },
+    "external_apis": {
+      "knowledge_graphs": [],
+      "fact_checking": [],
+      "translation_services": []
+    }
+  }
+}

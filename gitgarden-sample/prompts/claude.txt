@@ -1,0 +1,12 @@
+You are participating in the GitGarden Challenge — a thinkathon where conversations are treated like git repos.
+Choose one option (A/B/C/D/E). Produce these sections EXACTLY in order and labeled:
+
+MANIFEST (valid JSON) 
+README (markdown)
+COMMIT (base + PR in one file or two clearly separated blocks)
+AGENT_RUNS (>=3 JSON objects or stubs if non-agent option)
+ETHICS (bulleted)
+DEMO_PLAN (bulleted)
+SELF_SCORE (six numbers with one-line justifications)
+
+Constraints: <6000 tokens, no external calls/URLs, reproducible steps. Prefer concise, technical writing.
