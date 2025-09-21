@@ -15,7 +15,14 @@
     "agent_runs/run_2_test_generation.json": "Test generation agent output",
     "agent_runs/run_3_documentation.json": "Documentation agent output",
     "ethics_checklist.md": "Risk assessment and ethical considerations",
-    "demo_plan.md": "2-minute demonstration script"
+    "demo_plan.md": "2-minute demonstration script",
+    "conversation-agents/": "Complete conversation versioning system implementation",
+    "conversation-agents/manifest.json": "Conversation agents project metadata",
+    "conversation-agents/README.md": "Conversation versioning system documentation",
+    "conversation-agents/configs/": "Agent configuration files",
+    "conversation-agents/agents/": "Individual agent implementations",
+    "conversation-agents/templates/": "Conversation tracking templates",
+    "conversation-agents/runs/": "Execution workflow definitions"
   },
   "run_steps": [
     {
